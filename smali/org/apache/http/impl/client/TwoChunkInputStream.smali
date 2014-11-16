@@ -93,23 +93,6 @@
 # direct methods
 .method constructor <init>(Ljava/io/InputStream;Lorg/apache/http/conn/ManagedClientConnection;IIJJ[Lorg/apache/http/HttpRequest;[Lorg/apache/http/HttpHost;Lorg/apache/http/protocol/HttpContext;JJILorg/apache/http/impl/client/MultiSocketInputStream;JIZJ)V
     .locals 34
-    .param p1    # Ljava/io/InputStream;
-    .param p2    # Lorg/apache/http/conn/ManagedClientConnection;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # J
-    .param p7    # J
-    .param p9    # [Lorg/apache/http/HttpRequest;
-    .param p10    # [Lorg/apache/http/HttpHost;
-    .param p11    # Lorg/apache/http/protocol/HttpContext;
-    .param p12    # J
-    .param p14    # J
-    .param p16    # I
-    .param p17    # Lorg/apache/http/impl/client/MultiSocketInputStream;
-    .param p18    # J
-    .param p20    # I
-    .param p21    # Z
-    .param p22    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1596,7 +1579,6 @@
 
 .method static synthetic access$000(Lorg/apache/http/impl/client/TwoChunkInputStream;)Lorg/apache/http/impl/client/MultiSocketInputStream;
     .locals 1
-    .param p0    # Lorg/apache/http/impl/client/TwoChunkInputStream;
 
     iget-object v0, p0, Lorg/apache/http/impl/client/TwoChunkInputStream;->parentIS:Lorg/apache/http/impl/client/MultiSocketInputStream;
 
@@ -1605,7 +1587,6 @@
 
 .method static synthetic access$100(Lorg/apache/http/impl/client/TwoChunkInputStream;)[Lorg/apache/http/HttpRequest;
     .locals 1
-    .param p0    # Lorg/apache/http/impl/client/TwoChunkInputStream;
 
     iget-object v0, p0, Lorg/apache/http/impl/client/TwoChunkInputStream;->mRequest:[Lorg/apache/http/HttpRequest;
 
@@ -1614,7 +1595,6 @@
 
 .method static synthetic access$1000(Lorg/apache/http/impl/client/TwoChunkInputStream;)Lorg/apache/http/protocol/HttpContext;
     .locals 1
-    .param p0    # Lorg/apache/http/impl/client/TwoChunkInputStream;
 
     iget-object v0, p0, Lorg/apache/http/impl/client/TwoChunkInputStream;->mContext:Lorg/apache/http/protocol/HttpContext;
 
@@ -1623,7 +1603,6 @@
 
 .method static synthetic access$1100(Lorg/apache/http/impl/client/TwoChunkInputStream;)I
     .locals 1
-    .param p0    # Lorg/apache/http/impl/client/TwoChunkInputStream;
 
     iget v0, p0, Lorg/apache/http/impl/client/TwoChunkInputStream;->mDepth:I
 
@@ -1632,7 +1611,6 @@
 
 .method static synthetic access$1200(Lorg/apache/http/impl/client/TwoChunkInputStream;)J
     .locals 2
-    .param p0    # Lorg/apache/http/impl/client/TwoChunkInputStream;
 
     iget-wide v0, p0, Lorg/apache/http/impl/client/TwoChunkInputStream;->mFullConSize:J
 
@@ -1641,7 +1619,6 @@
 
 .method static synthetic access$1300(Lorg/apache/http/impl/client/TwoChunkInputStream;)I
     .locals 1
-    .param p0    # Lorg/apache/http/impl/client/TwoChunkInputStream;
 
     iget v0, p0, Lorg/apache/http/impl/client/TwoChunkInputStream;->mTimeOut:I
 
@@ -1650,8 +1627,6 @@
 
 .method static synthetic access$1402(Lorg/apache/http/impl/client/TwoChunkInputStream;Z)Z
     .locals 0
-    .param p0    # Lorg/apache/http/impl/client/TwoChunkInputStream;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lorg/apache/http/impl/client/TwoChunkInputStream;->bFailedInSecChunk:Z
 
@@ -1660,7 +1635,6 @@
 
 .method static synthetic access$1500(Lorg/apache/http/impl/client/TwoChunkInputStream;)[J
     .locals 1
-    .param p0    # Lorg/apache/http/impl/client/TwoChunkInputStream;
 
     iget-object v0, p0, Lorg/apache/http/impl/client/TwoChunkInputStream;->mStartReadTime:[J
 
@@ -1669,7 +1643,6 @@
 
 .method static synthetic access$1600(Lorg/apache/http/impl/client/TwoChunkInputStream;)I
     .locals 1
-    .param p0    # Lorg/apache/http/impl/client/TwoChunkInputStream;
 
     iget v0, p0, Lorg/apache/http/impl/client/TwoChunkInputStream;->mSocket0:I
 
@@ -1678,7 +1651,6 @@
 
 .method static synthetic access$1700(Lorg/apache/http/impl/client/TwoChunkInputStream;)Lorg/apache/http/impl/client/TwoChunkInputStream$SimpleDataBuffer;
     .locals 1
-    .param p0    # Lorg/apache/http/impl/client/TwoChunkInputStream;
 
     iget-object v0, p0, Lorg/apache/http/impl/client/TwoChunkInputStream;->mDBuf:Lorg/apache/http/impl/client/TwoChunkInputStream$SimpleDataBuffer;
 
@@ -1687,8 +1659,6 @@
 
 .method static synthetic access$1702(Lorg/apache/http/impl/client/TwoChunkInputStream;Lorg/apache/http/impl/client/TwoChunkInputStream$SimpleDataBuffer;)Lorg/apache/http/impl/client/TwoChunkInputStream$SimpleDataBuffer;
     .locals 0
-    .param p0    # Lorg/apache/http/impl/client/TwoChunkInputStream;
-    .param p1    # Lorg/apache/http/impl/client/TwoChunkInputStream$SimpleDataBuffer;
 
     iput-object p1, p0, Lorg/apache/http/impl/client/TwoChunkInputStream;->mDBuf:Lorg/apache/http/impl/client/TwoChunkInputStream$SimpleDataBuffer;
 
@@ -1697,7 +1667,6 @@
 
 .method static synthetic access$1800(Lorg/apache/http/impl/client/TwoChunkInputStream;)[J
     .locals 1
-    .param p0    # Lorg/apache/http/impl/client/TwoChunkInputStream;
 
     iget-object v0, p0, Lorg/apache/http/impl/client/TwoChunkInputStream;->mTimeForDownload:[J
 
@@ -1706,8 +1675,6 @@
 
 .method static synthetic access$1902(Lorg/apache/http/impl/client/TwoChunkInputStream;Z)Z
     .locals 0
-    .param p0    # Lorg/apache/http/impl/client/TwoChunkInputStream;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lorg/apache/http/impl/client/TwoChunkInputStream;->bSecThreadExisted:Z
 
@@ -1716,8 +1683,6 @@
 
 .method static synthetic access$200(Lorg/apache/http/impl/client/TwoChunkInputStream;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lorg/apache/http/impl/client/TwoChunkInputStream;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lorg/apache/http/impl/client/TwoChunkInputStream;->log(Ljava/lang/String;)V
 
@@ -1726,8 +1691,6 @@
 
 .method static synthetic access$2000(Lorg/apache/http/impl/client/TwoChunkInputStream;Z)V
     .locals 0
-    .param p0    # Lorg/apache/http/impl/client/TwoChunkInputStream;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lorg/apache/http/impl/client/TwoChunkInputStream;->createTwoChunkInTwoChunk(Z)V
 
@@ -1736,7 +1699,6 @@
 
 .method static synthetic access$300(Lorg/apache/http/impl/client/TwoChunkInputStream;)J
     .locals 2
-    .param p0    # Lorg/apache/http/impl/client/TwoChunkInputStream;
 
     iget-wide v0, p0, Lorg/apache/http/impl/client/TwoChunkInputStream;->mRemainBytes:J
 
@@ -1745,7 +1707,6 @@
 
 .method static synthetic access$400(Lorg/apache/http/impl/client/TwoChunkInputStream;)J
     .locals 2
-    .param p0    # Lorg/apache/http/impl/client/TwoChunkInputStream;
 
     iget-wide v0, p0, Lorg/apache/http/impl/client/TwoChunkInputStream;->mBytesForTail:J
 
@@ -1754,8 +1715,6 @@
 
 .method static synthetic access$402(Lorg/apache/http/impl/client/TwoChunkInputStream;J)J
     .locals 0
-    .param p0    # Lorg/apache/http/impl/client/TwoChunkInputStream;
-    .param p1    # J
 
     iput-wide p1, p0, Lorg/apache/http/impl/client/TwoChunkInputStream;->mBytesForTail:J
 
@@ -1764,7 +1723,6 @@
 
 .method static synthetic access$500(Lorg/apache/http/impl/client/TwoChunkInputStream;)Lorg/apache/http/impl/client/TwoChunkInputStream;
     .locals 1
-    .param p0    # Lorg/apache/http/impl/client/TwoChunkInputStream;
 
     iget-object v0, p0, Lorg/apache/http/impl/client/TwoChunkInputStream;->childIS:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
@@ -1773,8 +1731,6 @@
 
 .method static synthetic access$502(Lorg/apache/http/impl/client/TwoChunkInputStream;Lorg/apache/http/impl/client/TwoChunkInputStream;)Lorg/apache/http/impl/client/TwoChunkInputStream;
     .locals 0
-    .param p0    # Lorg/apache/http/impl/client/TwoChunkInputStream;
-    .param p1    # Lorg/apache/http/impl/client/TwoChunkInputStream;
 
     iput-object p1, p0, Lorg/apache/http/impl/client/TwoChunkInputStream;->childIS:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
@@ -1783,7 +1739,6 @@
 
 .method static synthetic access$600(Lorg/apache/http/impl/client/TwoChunkInputStream;)J
     .locals 2
-    .param p0    # Lorg/apache/http/impl/client/TwoChunkInputStream;
 
     iget-wide v0, p0, Lorg/apache/http/impl/client/TwoChunkInputStream;->mLength:J
 
@@ -1792,7 +1747,6 @@
 
 .method static synthetic access$700(Lorg/apache/http/impl/client/TwoChunkInputStream;)J
     .locals 2
-    .param p0    # Lorg/apache/http/impl/client/TwoChunkInputStream;
 
     iget-wide v0, p0, Lorg/apache/http/impl/client/TwoChunkInputStream;->mStart:J
 
@@ -1801,7 +1755,6 @@
 
 .method static synthetic access$800(Lorg/apache/http/impl/client/TwoChunkInputStream;)Lorg/apache/http/conn/ManagedClientConnection;
     .locals 1
-    .param p0    # Lorg/apache/http/impl/client/TwoChunkInputStream;
 
     iget-object v0, p0, Lorg/apache/http/impl/client/TwoChunkInputStream;->mManConn:Lorg/apache/http/conn/ManagedClientConnection;
 
@@ -1810,7 +1763,6 @@
 
 .method static synthetic access$900(Lorg/apache/http/impl/client/TwoChunkInputStream;)[Lorg/apache/http/HttpHost;
     .locals 1
-    .param p0    # Lorg/apache/http/impl/client/TwoChunkInputStream;
 
     iget-object v0, p0, Lorg/apache/http/impl/client/TwoChunkInputStream;->mHost:[Lorg/apache/http/HttpHost;
 
@@ -1819,7 +1771,6 @@
 
 .method private createTwoChunkInTwoChunk(Z)V
     .locals 26
-    .param p1    # Z
 
     move-object/from16 v0, p0
 
@@ -2232,8 +2183,6 @@
 
 .method private getCacheReadSpeed(JZ)D
     .locals 2
-    .param p1    # J
-    .param p3    # Z
 
     sget-wide v0, Lorg/apache/http/impl/client/MultiSocketInputStream;->BUF_Read_Speed:D
 
@@ -2242,7 +2191,6 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -2281,9 +2229,6 @@
 
 .method private readForChunk0([BII)I
     .locals 29
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -3706,15 +3651,12 @@
 
 .method protected decTime(IJ)V
     .locals 0
-    .param p1    # I
-    .param p2    # J
 
     return-void
 .end method
 
 .method protected getDownloadLen(I)J
     .locals 4
-    .param p1    # I
 
     iget-object v0, p0, Lorg/apache/http/impl/client/TwoChunkInputStream;->mDataDownloaded:[J
 
@@ -3743,7 +3685,6 @@
 
 .method protected getDownloadTime(I)J
     .locals 4
-    .param p1    # I
 
     iget-object v0, p0, Lorg/apache/http/impl/client/TwoChunkInputStream;->mTimeForDownload:[J
 
@@ -3780,8 +3721,6 @@
 
 .method protected incByte(IJ)V
     .locals 4
-    .param p1    # I
-    .param p2    # J
 
     iget-object v0, p0, Lorg/apache/http/impl/client/TwoChunkInputStream;->mDataDownloaded:[J
 
@@ -3907,7 +3846,6 @@
 
 .method public read([B)I
     .locals 2
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -3927,9 +3865,6 @@
 
 .method public read([BII)I
     .locals 12
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -4574,7 +4509,6 @@
 
 .method protected setTime(I)V
     .locals 5
-    .param p1    # I
 
     iget-object v0, p0, Lorg/apache/http/impl/client/TwoChunkInputStream;->mTimeForDownload:[J
 

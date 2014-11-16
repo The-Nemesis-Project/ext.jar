@@ -39,7 +39,6 @@
 
 .method public processChallenge(Lorg/apache/http/Header;)V
     .locals 9
-    .param p1    # Lorg/apache/http/Header;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/auth/MalformedChallengeException;
@@ -260,7 +259,6 @@
 
 .method public setProxy(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lorg/apache/http/impl/auth/AuthSchemeBase;->proxy:Z
 

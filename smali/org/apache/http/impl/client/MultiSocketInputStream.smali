@@ -380,23 +380,6 @@
 
 .method public constructor <init>(JLjava/io/InputStream;Lorg/apache/http/HttpRequest;Lorg/apache/http/HttpHost;Lorg/apache/http/protocol/HttpContext;Lorg/apache/http/conn/ManagedClientConnection;ZIJLorg/apache/http/impl/client/DefaultRequestDirector;JILorg/apache/http/impl/client/RoutedRequest;Lorg/apache/http/HttpRequest;JLorg/apache/http/HttpHost;Lorg/apache/http/conn/scheme/SchemeRegistry;)V
     .locals 10
-    .param p1    # J
-    .param p3    # Ljava/io/InputStream;
-    .param p4    # Lorg/apache/http/HttpRequest;
-    .param p5    # Lorg/apache/http/HttpHost;
-    .param p6    # Lorg/apache/http/protocol/HttpContext;
-    .param p7    # Lorg/apache/http/conn/ManagedClientConnection;
-    .param p8    # Z
-    .param p9    # I
-    .param p10    # J
-    .param p12    # Lorg/apache/http/impl/client/DefaultRequestDirector;
-    .param p13    # J
-    .param p15    # I
-    .param p16    # Lorg/apache/http/impl/client/RoutedRequest;
-    .param p17    # Lorg/apache/http/HttpRequest;
-    .param p18    # J
-    .param p20    # Lorg/apache/http/HttpHost;
-    .param p21    # Lorg/apache/http/conn/scheme/SchemeRegistry;
 
     invoke-direct {p0}, Ljava/io/InputStream;-><init>()V
 
@@ -1314,7 +1297,6 @@
 
 .method static synthetic access$000(Lorg/apache/http/impl/client/MultiSocketInputStream;)J
     .locals 2
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     iget-wide v0, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->mMainThreadID:J
 
@@ -1323,8 +1305,6 @@
 
 .method static synthetic access$002(Lorg/apache/http/impl/client/MultiSocketInputStream;J)J
     .locals 0
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
-    .param p1    # J
 
     iput-wide p1, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->mMainThreadID:J
 
@@ -1333,7 +1313,6 @@
 
 .method static synthetic access$100(Lorg/apache/http/impl/client/MultiSocketInputStream;)Lorg/apache/http/protocol/HttpContext;
     .locals 1
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     iget-object v0, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->mHttpContext:Lorg/apache/http/protocol/HttpContext;
 
@@ -1342,7 +1321,6 @@
 
 .method static synthetic access$1000(Lorg/apache/http/impl/client/MultiSocketInputStream;)D
     .locals 2
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     iget-wide v0, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->mSpeedRatio:D
 
@@ -1351,8 +1329,6 @@
 
 .method static synthetic access$1002(Lorg/apache/http/impl/client/MultiSocketInputStream;D)D
     .locals 0
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
-    .param p1    # D
 
     iput-wide p1, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->mSpeedRatio:D
 
@@ -1361,7 +1337,6 @@
 
 .method static synthetic access$1100(Lorg/apache/http/impl/client/MultiSocketInputStream;)J
     .locals 2
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     iget-wide v0, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->mBytesForMultiSocket:J
 
@@ -1370,8 +1345,6 @@
 
 .method static synthetic access$1102(Lorg/apache/http/impl/client/MultiSocketInputStream;J)J
     .locals 0
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
-    .param p1    # J
 
     iput-wide p1, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->mBytesForMultiSocket:J
 
@@ -1380,7 +1353,6 @@
 
 .method static synthetic access$1200(Lorg/apache/http/impl/client/MultiSocketInputStream;)J
     .locals 2
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     iget-wide v0, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->mOffset:J
 
@@ -1389,8 +1361,6 @@
 
 .method static synthetic access$1202(Lorg/apache/http/impl/client/MultiSocketInputStream;J)J
     .locals 0
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
-    .param p1    # J
 
     iput-wide p1, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->mOffset:J
 
@@ -1399,7 +1369,6 @@
 
 .method static synthetic access$1300(Lorg/apache/http/impl/client/MultiSocketInputStream;)I
     .locals 1
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     iget v0, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->mAlgoType:I
 
@@ -1408,7 +1377,6 @@
 
 .method static synthetic access$1400(Lorg/apache/http/impl/client/MultiSocketInputStream;)Lorg/apache/http/impl/client/MultiSocketInputStream$DataBuffer;
     .locals 1
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     iget-object v0, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->mExtDBuf:Lorg/apache/http/impl/client/MultiSocketInputStream$DataBuffer;
 
@@ -1417,8 +1385,6 @@
 
 .method static synthetic access$1402(Lorg/apache/http/impl/client/MultiSocketInputStream;Lorg/apache/http/impl/client/MultiSocketInputStream$DataBuffer;)Lorg/apache/http/impl/client/MultiSocketInputStream$DataBuffer;
     .locals 0
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
-    .param p1    # Lorg/apache/http/impl/client/MultiSocketInputStream$DataBuffer;
 
     iput-object p1, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->mExtDBuf:Lorg/apache/http/impl/client/MultiSocketInputStream$DataBuffer;
 
@@ -1427,7 +1393,6 @@
 
 .method static synthetic access$1500(Lorg/apache/http/impl/client/MultiSocketInputStream;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     iget-object v0, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->mInBuffer:Ljava/util/HashMap;
 
@@ -1436,7 +1401,6 @@
 
 .method static synthetic access$1600(Lorg/apache/http/impl/client/MultiSocketInputStream;)[B
     .locals 1
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     iget-object v0, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
 
@@ -1445,8 +1409,6 @@
 
 .method static synthetic access$1602(Lorg/apache/http/impl/client/MultiSocketInputStream;[B)[B
     .locals 0
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
-    .param p1    # [B
 
     iput-object p1, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockStatus:[B
 
@@ -1455,7 +1417,6 @@
 
 .method static synthetic access$1700(Lorg/apache/http/impl/client/MultiSocketInputStream;)Lorg/apache/http/impl/client/MultiSocketInputStream$ExtremeConditionThread;
     .locals 1
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     iget-object v0, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->mExtThread:Lorg/apache/http/impl/client/MultiSocketInputStream$ExtremeConditionThread;
 
@@ -1464,8 +1425,6 @@
 
 .method static synthetic access$1702(Lorg/apache/http/impl/client/MultiSocketInputStream;Lorg/apache/http/impl/client/MultiSocketInputStream$ExtremeConditionThread;)Lorg/apache/http/impl/client/MultiSocketInputStream$ExtremeConditionThread;
     .locals 0
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
-    .param p1    # Lorg/apache/http/impl/client/MultiSocketInputStream$ExtremeConditionThread;
 
     iput-object p1, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->mExtThread:Lorg/apache/http/impl/client/MultiSocketInputStream$ExtremeConditionThread;
 
@@ -1486,7 +1445,6 @@
 
 .method static synthetic access$1900(Lorg/apache/http/impl/client/MultiSocketInputStream;)Z
     .locals 1
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     iget-boolean v0, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->bExtremThreadStarted:Z
 
@@ -1495,8 +1453,6 @@
 
 .method static synthetic access$1902(Lorg/apache/http/impl/client/MultiSocketInputStream;Z)Z
     .locals 0
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->bExtremThreadStarted:Z
 
@@ -1505,7 +1461,6 @@
 
 .method static synthetic access$200(Lorg/apache/http/impl/client/MultiSocketInputStream;)[Lorg/apache/http/HttpHost;
     .locals 1
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     iget-object v0, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->mHttpHost:[Lorg/apache/http/HttpHost;
 
@@ -1514,7 +1469,6 @@
 
 .method static synthetic access$2000(Lorg/apache/http/impl/client/MultiSocketInputStream;)Z
     .locals 1
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     iget-boolean v0, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->bExtremThreadExisted:Z
 
@@ -1523,8 +1477,6 @@
 
 .method static synthetic access$2002(Lorg/apache/http/impl/client/MultiSocketInputStream;Z)Z
     .locals 0
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->bExtremThreadExisted:Z
 
@@ -1533,7 +1485,6 @@
 
 .method static synthetic access$2100(Lorg/apache/http/impl/client/MultiSocketInputStream;)Lorg/apache/http/conn/ManagedClientConnection;
     .locals 1
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     iget-object v0, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->mMainManagedConn:Lorg/apache/http/conn/ManagedClientConnection;
 
@@ -1542,8 +1493,6 @@
 
 .method static synthetic access$2102(Lorg/apache/http/impl/client/MultiSocketInputStream;Lorg/apache/http/conn/ManagedClientConnection;)Lorg/apache/http/conn/ManagedClientConnection;
     .locals 0
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
-    .param p1    # Lorg/apache/http/conn/ManagedClientConnection;
 
     iput-object p1, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->mMainManagedConn:Lorg/apache/http/conn/ManagedClientConnection;
 
@@ -1552,7 +1501,6 @@
 
 .method static synthetic access$2200(Lorg/apache/http/impl/client/MultiSocketInputStream;)J
     .locals 2
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     iget-wide v0, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->bytesA:J
 
@@ -1561,8 +1509,6 @@
 
 .method static synthetic access$2202(Lorg/apache/http/impl/client/MultiSocketInputStream;J)J
     .locals 0
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
-    .param p1    # J
 
     iput-wide p1, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->bytesA:J
 
@@ -1571,7 +1517,6 @@
 
 .method static synthetic access$2300(Lorg/apache/http/impl/client/MultiSocketInputStream;)I
     .locals 1
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     iget v0, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->mRangeRequestSuccess:I
 
@@ -1580,8 +1525,6 @@
 
 .method static synthetic access$2302(Lorg/apache/http/impl/client/MultiSocketInputStream;I)I
     .locals 0
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
-    .param p1    # I
 
     iput p1, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->mRangeRequestSuccess:I
 
@@ -1590,7 +1533,6 @@
 
 .method static synthetic access$2400(Lorg/apache/http/impl/client/MultiSocketInputStream;)[Lorg/apache/http/HttpRequest;
     .locals 1
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     iget-object v0, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->mHttpRequest:[Lorg/apache/http/HttpRequest;
 
@@ -1599,7 +1541,6 @@
 
 .method static synthetic access$2500(Lorg/apache/http/impl/client/MultiSocketInputStream;)I
     .locals 1
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     iget v0, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->mOtherInterface:I
 
@@ -1608,7 +1549,6 @@
 
 .method static synthetic access$2600(Lorg/apache/http/impl/client/MultiSocketInputStream;)J
     .locals 2
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     iget-wide v0, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->bytesB:J
 
@@ -1617,8 +1557,6 @@
 
 .method static synthetic access$2602(Lorg/apache/http/impl/client/MultiSocketInputStream;J)J
     .locals 0
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
-    .param p1    # J
 
     iput-wide p1, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->bytesB:J
 
@@ -1627,7 +1565,6 @@
 
 .method static synthetic access$2700(Lorg/apache/http/impl/client/MultiSocketInputStream;)J
     .locals 2
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     iget-wide v0, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->bytesC:J
 
@@ -1636,8 +1573,6 @@
 
 .method static synthetic access$2702(Lorg/apache/http/impl/client/MultiSocketInputStream;J)J
     .locals 0
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
-    .param p1    # J
 
     iput-wide p1, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->bytesC:J
 
@@ -1646,7 +1581,6 @@
 
 .method static synthetic access$2800(Lorg/apache/http/impl/client/MultiSocketInputStream;)J
     .locals 2
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     iget-wide v0, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->mContentLengthRangeRequest:J
 
@@ -1655,7 +1589,6 @@
 
 .method static synthetic access$2900(Lorg/apache/http/impl/client/MultiSocketInputStream;)[Ljava/net/InetAddress;
     .locals 1
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     iget-object v0, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->mRemoteAddress:[Ljava/net/InetAddress;
 
@@ -1664,7 +1597,6 @@
 
 .method static synthetic access$300(Lorg/apache/http/impl/client/MultiSocketInputStream;)I
     .locals 1
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     iget v0, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->mMainSocketInterface:I
 
@@ -1673,7 +1605,6 @@
 
 .method static synthetic access$3000(Lorg/apache/http/impl/client/MultiSocketInputStream;)Z
     .locals 1
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     iget-boolean v0, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->mIsConnectionClosedAfterEveryRequest:Z
 
@@ -1682,8 +1613,6 @@
 
 .method static synthetic access$3002(Lorg/apache/http/impl/client/MultiSocketInputStream;Z)Z
     .locals 0
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->mIsConnectionClosedAfterEveryRequest:Z
 
@@ -1692,7 +1621,6 @@
 
 .method static synthetic access$3100(Lorg/apache/http/impl/client/MultiSocketInputStream;)J
     .locals 2
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     iget-wide v0, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->mMainSocketConnectTime:J
 
@@ -1701,7 +1629,6 @@
 
 .method static synthetic access$3200(Lorg/apache/http/impl/client/MultiSocketInputStream;)[J
     .locals 1
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     iget-object v0, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->mStartReadTime:[J
 
@@ -1710,8 +1637,6 @@
 
 .method static synthetic access$3302(Lorg/apache/http/impl/client/MultiSocketInputStream;I)I
     .locals 0
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
-    .param p1    # I
 
     iput p1, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->mMainSocketAfterHandover:I
 
@@ -1720,7 +1645,6 @@
 
 .method static synthetic access$3400(Lorg/apache/http/impl/client/MultiSocketInputStream;)Ljava/io/InputStream;
     .locals 1
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     iget-object v0, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->mMainSocketInputStream:Ljava/io/InputStream;
 
@@ -1737,7 +1661,6 @@
 
 .method static synthetic access$3502(I)I
     .locals 0
-    .param p0    # I
 
     sput p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->sMaxBlock:I
 
@@ -1746,8 +1669,6 @@
 
 .method static synthetic access$3602(Lorg/apache/http/impl/client/MultiSocketInputStream;I)I
     .locals 0
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
-    .param p1    # I
 
     iput p1, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->mRestBlockSize:I
 
@@ -1756,7 +1677,6 @@
 
 .method static synthetic access$3700(Lorg/apache/http/impl/client/MultiSocketInputStream;)I
     .locals 1
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     iget v0, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->mMaxBlockNumber:I
 
@@ -1765,8 +1685,6 @@
 
 .method static synthetic access$3702(Lorg/apache/http/impl/client/MultiSocketInputStream;I)I
     .locals 0
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
-    .param p1    # I
 
     iput p1, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->mMaxBlockNumber:I
 
@@ -1775,7 +1693,6 @@
 
 .method static synthetic access$3800(Lorg/apache/http/impl/client/MultiSocketInputStream;)Z
     .locals 1
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     iget-boolean v0, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->mIsMultiSocketStarted:Z
 
@@ -1784,8 +1701,6 @@
 
 .method static synthetic access$3802(Lorg/apache/http/impl/client/MultiSocketInputStream;Z)Z
     .locals 0
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->mIsMultiSocketStarted:Z
 
@@ -1794,7 +1709,6 @@
 
 .method static synthetic access$3900(Lorg/apache/http/impl/client/MultiSocketInputStream;)I
     .locals 1
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     iget v0, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->finishedThreadNum:I
 
@@ -1803,8 +1717,6 @@
 
 .method static synthetic access$3902(Lorg/apache/http/impl/client/MultiSocketInputStream;I)I
     .locals 0
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
-    .param p1    # I
 
     iput p1, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->finishedThreadNum:I
 
@@ -1813,7 +1725,6 @@
 
 .method static synthetic access$3908(Lorg/apache/http/impl/client/MultiSocketInputStream;)I
     .locals 2
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     iget v0, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->finishedThreadNum:I
 
@@ -1826,7 +1737,6 @@
 
 .method static synthetic access$400(Lorg/apache/http/impl/client/MultiSocketInputStream;)J
     .locals 2
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     iget-wide v0, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->mContentLength:J
 
@@ -1835,7 +1745,6 @@
 
 .method static synthetic access$4000(Lorg/apache/http/impl/client/MultiSocketInputStream;)[Lorg/apache/http/impl/client/MultiSocketInputStream$RangeRequest;
     .locals 1
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     iget-object v0, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->mRequestHandlers:[Lorg/apache/http/impl/client/MultiSocketInputStream$RangeRequest;
 
@@ -1844,7 +1753,6 @@
 
 .method static synthetic access$4100(Lorg/apache/http/impl/client/MultiSocketInputStream;)Z
     .locals 1
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     iget-boolean v0, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->TEST_GET_TRAFFIC:Z
 
@@ -1853,7 +1761,6 @@
 
 .method static synthetic access$4200(Lorg/apache/http/impl/client/MultiSocketInputStream;)[J
     .locals 1
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     iget-object v0, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->mDataDownloaded:[J
 
@@ -1862,7 +1769,6 @@
 
 .method static synthetic access$4300(Lorg/apache/http/impl/client/MultiSocketInputStream;)Lorg/apache/http/impl/client/TwoChunkInputStream;
     .locals 1
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     iget-object v0, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->childIS:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
@@ -1871,8 +1777,6 @@
 
 .method static synthetic access$4302(Lorg/apache/http/impl/client/MultiSocketInputStream;Lorg/apache/http/impl/client/TwoChunkInputStream;)Lorg/apache/http/impl/client/TwoChunkInputStream;
     .locals 0
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
-    .param p1    # Lorg/apache/http/impl/client/TwoChunkInputStream;
 
     iput-object p1, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->childIS:Lorg/apache/http/impl/client/TwoChunkInputStream;
 
@@ -1881,7 +1785,6 @@
 
 .method static synthetic access$4400(Lorg/apache/http/impl/client/MultiSocketInputStream;)[J
     .locals 1
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     iget-object v0, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->mTimeForDownload:[J
 
@@ -1890,7 +1793,6 @@
 
 .method static synthetic access$4500(Lorg/apache/http/impl/client/MultiSocketInputStream;)Z
     .locals 1
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     iget-boolean v0, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->SEND_NO_TRAFFIC_WARN:Z
 
@@ -1899,7 +1801,6 @@
 
 .method static synthetic access$4600(Lorg/apache/http/impl/client/MultiSocketInputStream;)Z
     .locals 1
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     invoke-direct {p0}, Lorg/apache/http/impl/client/MultiSocketInputStream;->bTwoInfDownloading()Z
 
@@ -1910,7 +1811,6 @@
 
 .method static synthetic access$4700(Lorg/apache/http/impl/client/MultiSocketInputStream;)Z
     .locals 1
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     iget-boolean v0, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->bStopSecDecisionMade:Z
 
@@ -1919,8 +1819,6 @@
 
 .method static synthetic access$4702(Lorg/apache/http/impl/client/MultiSocketInputStream;Z)Z
     .locals 0
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->bStopSecDecisionMade:Z
 
@@ -1929,7 +1827,6 @@
 
 .method static synthetic access$4800(Lorg/apache/http/impl/client/MultiSocketInputStream;)I
     .locals 1
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     iget v0, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->failReasonInExtreme:I
 
@@ -1938,8 +1835,6 @@
 
 .method static synthetic access$4802(Lorg/apache/http/impl/client/MultiSocketInputStream;I)I
     .locals 0
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
-    .param p1    # I
 
     iput p1, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->failReasonInExtreme:I
 
@@ -1948,7 +1843,6 @@
 
 .method static synthetic access$4900(Lorg/apache/http/impl/client/MultiSocketInputStream;)Z
     .locals 1
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     iget-boolean v0, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->mIsReadFromBuffer:Z
 
@@ -1957,8 +1851,6 @@
 
 .method static synthetic access$4902(Lorg/apache/http/impl/client/MultiSocketInputStream;Z)Z
     .locals 0
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->mIsReadFromBuffer:Z
 
@@ -1967,7 +1859,6 @@
 
 .method static synthetic access$500(Lorg/apache/http/impl/client/MultiSocketInputStream;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     iget-object v0, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->sbUsedLocker:Ljava/lang/Object;
 
@@ -1976,7 +1867,6 @@
 
 .method static synthetic access$5000(Lorg/apache/http/impl/client/MultiSocketInputStream;)I
     .locals 1
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     iget v0, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->MIN_TIME_TO_CHECK_STOP_SLOW:I
 
@@ -2001,7 +1891,6 @@
 
 .method static synthetic access$5400(Lorg/apache/http/impl/client/MultiSocketInputStream;)Z
     .locals 1
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     iget-boolean v0, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->bAppIsReadingNow:Z
 
@@ -2010,7 +1899,6 @@
 
 .method static synthetic access$5500(Lorg/apache/http/impl/client/MultiSocketInputStream;)Ljava/lang/Integer;
     .locals 1
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     iget-object v0, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->mReadBlockNumber:Ljava/lang/Integer;
 
@@ -2019,8 +1907,6 @@
 
 .method static synthetic access$5600(Lorg/apache/http/impl/client/MultiSocketInputStream;I)I
     .locals 1
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lorg/apache/http/impl/client/MultiSocketInputStream;->getOtherSocketID(I)I
 
@@ -2031,7 +1917,6 @@
 
 .method static synthetic access$5800(Lorg/apache/http/impl/client/MultiSocketInputStream;)J
     .locals 2
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     iget-wide v0, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->mResponeTimeFromMainSocket:J
 
@@ -2040,7 +1925,6 @@
 
 .method static synthetic access$5900(Lorg/apache/http/impl/client/MultiSocketInputStream;)J
     .locals 2
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     iget-wide v0, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->bufReadSpeed:J
 
@@ -2049,8 +1933,6 @@
 
 .method static synthetic access$5902(Lorg/apache/http/impl/client/MultiSocketInputStream;J)J
     .locals 0
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
-    .param p1    # J
 
     iput-wide p1, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->bufReadSpeed:J
 
@@ -2059,7 +1941,6 @@
 
 .method static synthetic access$600(Lorg/apache/http/impl/client/MultiSocketInputStream;)Z
     .locals 1
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     iget-boolean v0, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->bSBUsed:Z
 
@@ -2068,8 +1949,6 @@
 
 .method static synthetic access$602(Lorg/apache/http/impl/client/MultiSocketInputStream;Z)Z
     .locals 0
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->bSBUsed:Z
 
@@ -2078,7 +1957,6 @@
 
 .method static synthetic access$6100(Lorg/apache/http/impl/client/MultiSocketInputStream;)[J
     .locals 1
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     iget-object v0, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->mSpeedForEachInterface:[J
 
@@ -2087,7 +1965,6 @@
 
 .method static synthetic access$700(Lorg/apache/http/impl/client/MultiSocketInputStream;)J
     .locals 2
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     iget-wide v0, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->mBytesRemaining:J
 
@@ -2096,7 +1973,6 @@
 
 .method static synthetic access$800(Lorg/apache/http/impl/client/MultiSocketInputStream;)Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;
     .locals 1
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     iget-object v0, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockManager:Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;
 
@@ -2105,7 +1981,6 @@
 
 .method static synthetic access$900(Lorg/apache/http/impl/client/MultiSocketInputStream;)I
     .locals 1
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
 
     iget v0, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockSize:I
 
@@ -2114,8 +1989,6 @@
 
 .method static synthetic access$902(Lorg/apache/http/impl/client/MultiSocketInputStream;I)I
     .locals 0
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream;
-    .param p1    # I
 
     iput p1, p0, Lorg/apache/http/impl/client/MultiSocketInputStream;->mBlockSize:I
 
@@ -2157,7 +2030,6 @@
 
 .method protected static closeConnQuiet(Lorg/apache/http/conn/ManagedClientConnection;)V
     .locals 1
-    .param p0    # Lorg/apache/http/conn/ManagedClientConnection;
 
     if-nez p0, :cond_0
 
@@ -2191,8 +2063,6 @@
 
 .method private getBooleanProp(Ljava/lang/String;Z)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v2, 0x1
 
@@ -2249,7 +2119,6 @@
 
 .method private getOtherSocketID(I)I
     .locals 1
-    .param p1    # I
 
     add-int/lit8 v0, p1, 0x1
 
@@ -2260,7 +2129,6 @@
 
 .method private getProp(Ljava/lang/String;)Ljava/lang/String;
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -2327,7 +2195,6 @@
 
 .method private getRatioThreshold(Ljava/lang/String;)I
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x5
 
@@ -2402,9 +2269,6 @@
 
 .method private readFromMainSocket([BII)I
     .locals 30
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -5127,7 +4991,6 @@
 
 .method protected createTwoChunkInputInMain(Z)V
     .locals 27
-    .param p1    # Z
 
     move-object/from16 v0, p0
 
@@ -5586,15 +5449,12 @@
 
 .method protected decTime(IJ)V
     .locals 0
-    .param p1    # I
-    .param p2    # J
 
     return-void
 .end method
 
 .method protected getSpeed(I)J
     .locals 12
-    .param p1    # I
 
     const-wide/16 v10, 0x8
 
@@ -5663,8 +5523,6 @@
 
 .method protected getSpeed(JJ)J
     .locals 3
-    .param p1    # J
-    .param p3    # J
 
     const-wide/16 v0, 0x0
 
@@ -5687,8 +5545,6 @@
 
 .method protected incByte(IJ)V
     .locals 4
-    .param p1    # I
-    .param p2    # J
 
     sget-boolean v0, Lorg/apache/http/impl/client/CustomHttpClient;->APACHE_HTTP_DBG:Z
 
@@ -5858,7 +5714,6 @@
 
 .method public mark(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
@@ -5898,7 +5753,6 @@
 
 .method public read([B)I
     .locals 2
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -5918,9 +5772,6 @@
 
 .method public read([BII)I
     .locals 28
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -8967,7 +8818,6 @@
 
 .method protected setTime(I)V
     .locals 7
-    .param p1    # I
 
     sget-boolean v2, Lorg/apache/http/impl/client/CustomHttpClient;->APACHE_HTTP_DBG:Z
 
@@ -9109,7 +8959,6 @@
 
 .method protected startSingleThreadRunning(Z)V
     .locals 4
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 

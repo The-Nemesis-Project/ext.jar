@@ -76,11 +76,6 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/impl/client/MultiSocketInputStream;JIILjava/util/LinkedList;II)V
     .locals 5
-    .param p2    # J
-    .param p4    # I
-    .param p5    # I
-    .param p7    # I
-    .param p8    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(JII",
@@ -553,7 +548,6 @@
 # virtual methods
 .method public changeSockID(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lorg/apache/http/impl/client/MultiSocketInputStream$DataBuffer;->sockID:I
 
@@ -728,9 +722,6 @@
 
 .method public push(I[BI)J
     .locals 8
-    .param p1    # I
-    .param p2    # [B
-    .param p3    # I
 
     const-wide/16 v4, -0x1
 
@@ -899,9 +890,6 @@
 
 .method public push(Ljava/io/InputStream;JJ)V
     .locals 6
-    .param p1    # Ljava/io/InputStream;
-    .param p2    # J
-    .param p4    # J
 
     monitor-enter p0
 
@@ -1068,9 +1056,6 @@
 
 .method public read([BII)I
     .locals 18
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
 
     const/4 v10, 0x0
 
@@ -2062,7 +2047,6 @@
 
 .method public removeTail(I)V
     .locals 6
-    .param p1    # I
 
     iget-boolean v2, p0, Lorg/apache/http/impl/client/MultiSocketInputStream$DataBuffer;->bSavedInFile:Z
 
@@ -2126,7 +2110,6 @@
 
 .method public setTotalChunks(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lorg/apache/http/impl/client/MultiSocketInputStream$DataBuffer;->totalContinuousChunk:I
 
@@ -2164,8 +2147,6 @@
 
 .method public switchSocket(IZ)[J
     .locals 6
-    .param p1    # I
-    .param p2    # Z
 
     monitor-enter p0
 
